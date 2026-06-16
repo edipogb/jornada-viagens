@@ -1,20 +1,23 @@
-header{
-    background-color: var(--background-tertiary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 38px 48px;
+header {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 48px;
 }
-.logo{
-    display: inline-block;
-    width: 68px;
-    height: 64px;
-    }
-nav{
-    display: none;
+.logo {
+  display: inline-block;
+  width: 68px;
+  height: 64px;
 }
-.menu-toggle{
-    margin-top: 24px;
-    display: block;
-    cursor: pointer;
+.menu-toggle {
+  margin-top: 24px;
+  display: block;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+nav {
+  display: none;
 }
